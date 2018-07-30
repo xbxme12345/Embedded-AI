@@ -137,6 +137,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showResult(result: Result) {
         textResult.text = result.result.toUpperCase()
+        Confidence.text = result.confidence.toString()
         layoutContainer.setBackgroundColor(getColorFromResult(result.result))
     }
 
