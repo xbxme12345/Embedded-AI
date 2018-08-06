@@ -1136,7 +1136,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--how_many_training_steps',
       type=int,
-      default=4000,
+      default=500,
       help='How many training steps to run before ending.'
   )
   parser.add_argument(
@@ -1148,19 +1148,19 @@ if __name__ == '__main__':
   parser.add_argument(
       '--testing_percentage',
       type=int,
-      default=10,
+      default=24,
       help='What percentage of images to use as a test set.'
   )
   parser.add_argument(
       '--validation_percentage',
       type=int,
-      default=10,
+      default=23,
       help='What percentage of images to use as a validation set.'
   )
   parser.add_argument(
       '--eval_step_interval',
       type=int,
-      default=10,
+      default=20,
       help='How often to evaluate the training results.'
   )
   parser.add_argument(
@@ -1195,7 +1195,7 @@ if __name__ == '__main__':
   )
   parser.add_argument(
       '--print_misclassified_test_images',
-      default=False,
+      default=True,
       help="""\
       Whether to print out a list of all misclassified test images.\
       """,
