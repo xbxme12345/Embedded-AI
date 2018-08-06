@@ -1142,13 +1142,13 @@ if __name__ == '__main__':
   parser.add_argument(
       '--learning_rate',
       type=float,
-      default=0.1,
+      default=0.01,
       help='How large a learning rate to use when training.'
   )
   parser.add_argument(
       '--testing_percentage',
       type=int,
-      default=23,
+      default=24,
       help='What percentage of images to use as a test set.'
   )
   parser.add_argument(
@@ -1160,7 +1160,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--eval_step_interval',
       type=int,
-      default=10,
+      default=20,
       help='How often to evaluate the training results.'
   )
   parser.add_argument(
