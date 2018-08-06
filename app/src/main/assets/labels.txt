@@ -1,3 +1,2 @@
 Sober
-Drunk
-High
+NotSober
